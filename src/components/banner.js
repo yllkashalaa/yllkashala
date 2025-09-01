@@ -1,4 +1,4 @@
-import './banner.css'
+import './custom.css'
 
 function Banner() {
   return(
@@ -20,7 +20,7 @@ function Banner() {
         </div>
 
         <div className='paragraphs'>
-          <p className='text-text'>Ideas crafted <span>into</span> clean code, innovative designs, <span>and</span> flawlessly managed projects.</p>
+          <p className='text-text'>Engineering solutions <span>by</span> by combining robust code, thoughtful design, <span>and</span> strategic project management.</p>
           {/* <p className='focus text-text'>Software Development | UI/UX Design | Project Management</p> */}
         </div>
 

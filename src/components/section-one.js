@@ -1,9 +1,9 @@
-import './section-one.css'
+import './custom.css'
 
 function SectionOne() {
   return (
     <div className='section-one bg-bgSecondary'>
-      <div className='content'>
+      <div className='section-one-content'>
         <div className="line-with-text">
           <span className="banner-line bg-primary"></span>
           <p className='text-text'>About me</p>
