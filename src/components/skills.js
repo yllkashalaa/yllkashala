@@ -56,11 +56,11 @@ export default function Skills() {
   ]
 
   return (
-    <div className='skills bg-bgSecondary'>
-      <div className='skills-content max-w-4xl mx-auto flex flex-col justify-center items-center gap-4 py-6'>
+    <div className='skills-content bg-bgSecondary'>
+      <div className='skills-content'>
         <div className="skills-grid">
           {skills.map((skill, idx) => (
-            <div key={idx} className="skills-card ">
+            <div key={idx} className="skills-card">
               <div className="flex items-center gap-1 mb-2">
                 <div className={`text-lg ${skill.color}`}>{skill.icon}</div>
                 <h2 className="skills-card-title">{skill.title}</h2>
