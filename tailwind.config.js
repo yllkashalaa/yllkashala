@@ -10,6 +10,8 @@ module.exports = {
         secondary: "#AEC9AB",
         text: "white",
         title: "#94B59F",
+        bgPrimary: "#09090B",
+        bgSecondary: "#2d2d2e",
       },
     },
   },
