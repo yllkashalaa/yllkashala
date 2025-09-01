@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-elements-header {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+.nav-elements-header a {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 8px;
+  color: #94B59F;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav-elements-header a:hover {
+  color: #94B59F;
+  background-color: rgb(255, 255, 255);
+}
