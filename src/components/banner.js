@@ -2,14 +2,14 @@ import './custom.css';
 import {useEffect, useState} from 'react';
 
 function Banner() {
-  const dotPositions = [
-    { top: "50%", left: "90%" },
-    { top: "20%", left: "70%" },
-  ];
+  // const dotPositions = [
+  //   { top: "50%", left: "90%" },
+  //   { top: "20%", left: "70%" },
+  // ];
 
   return (
     <div style={{ position: "relative", height: "100vh" }}>
-      {dotPositions.map((pos, index) => (
+      {/* {dotPositions.map((pos, index) => (
         <span
           key={index}
           className="dot neon-dot"
@@ -18,7 +18,7 @@ function Banner() {
             left: pos.left,
           }}
         ></span>
-      ))}
+      ))} */}
       <div className='banner-content'>
 
         <div className="line-with-text">

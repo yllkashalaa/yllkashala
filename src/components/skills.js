@@ -23,7 +23,7 @@ export default function Skills() {
         <path d="m4 17 6-6-6-6"></path>
       </svg>
     ),
-      tags: ["JavaScript", "TypeScript","React", "Next.js"],
+      tags: ["JavaScript", "TypeScript","React.js", "Next.js", "Shopware Frontend", "Twig", "TailwindCSS", "Bootstrap"],
       color: "text-green-500"
     },
     {

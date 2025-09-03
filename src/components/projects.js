@@ -4,19 +4,19 @@ const projects = [
   {
     title: "To-Do List",
     desc: "Task management app with a clean, responsive interface. Responsible for full frontend development using Next.js and JavaScript.",
-    tech: ["JavaScript", "Next.js", "TailwindCSS"],
+    tech: ["UX Reasearch", "UI Design", "Figma", "Project Management", "JavaScript", "Next.js", "TailwindCSS"],
     image: "",
   },
   {
     title: "Elegance Elixir",
     desc: "UI/UX design for a Shopware store with clean, intuitive, and visually engaging interface from wireframes to high-fidelity prototype.",
-    tech: ["UX Reasearch", "UI Design", "Figma"],
+    tech: ["UX Reasearch", "UI Design", "Figma", "Project Management"],
     image: "/images/elixir-elegance.png",
   },
   {
     title: "Pocket Nurse",
     desc: "Managed project and designed a user-friendly interface for a healthcare solution. Coding in progress.",
-    tech: ["Project Management", "UI Design", "Figma"],
+    tech: ["UX Reasearch", "UI Design", "Figma", "Project Management"],
     image: "/images/pocket-nurse.png"
   }
 ];
