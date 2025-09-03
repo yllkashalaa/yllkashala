@@ -4,8 +4,8 @@ const projects = [
   {
     title: "To-Do List",
     desc: "Task management app with a clean, responsive interface. Responsible for full frontend development using Next.js and JavaScript.",
-    tech: ["UX Reasearch", "UI Design", "Figma", "Project Management", "JavaScript", "Next.js", "TailwindCSS"],
-    image: "",
+    tech: ["UI/UX Design", "Figma", "Project Management", "JavaScript", "Next.js", "TailwindCSS"],
+    image: "/images/to-do-list.png",
   },
   {
     title: "Elegance Elixir",
