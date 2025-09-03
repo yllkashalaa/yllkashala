@@ -1,14 +1,24 @@
-import './custom.css'
+import './custom.css';
+import {useEffect, useState} from 'react';
 
 function Banner() {
-  return(
-    <div>
-      <span className="dot" style={{top: '10%', left: '20%'}}></span>
-      <span className="dot" style={{top: '30%', left: '90%'}}></span>
-      <span className="dot" style={{top: '40%', left: '5%'}}></span>
-      <span className="dot" style={{top: '90%', left: '10%'}}></span>
-      <span className="dot" style={{top: '20%', left: '70%'}}></span>
-      <span className="dot" style={{top: '90%', left: '60%'}}></span>
+  const dotPositions = [
+    { top: "50%", left: "90%" },
+    { top: "20%", left: "70%" },
+  ];
+
+  return (
+    <div style={{ position: "relative", height: "100vh" }}>
+      {dotPositions.map((pos, index) => (
+        <span
+          key={index}
+          className="dot neon-dot"
+          style={{
+            top: pos.top,
+            left: pos.left,
+          }}
+        ></span>
+      ))}
       <div className='banner-content'>
 
         <div className="line-with-text">
