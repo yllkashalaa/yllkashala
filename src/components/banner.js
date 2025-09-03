@@ -20,7 +20,7 @@ function Banner() {
         </div>
 
         <div className='paragraphs'>
-          <p className='text-text'>Engineering solutions <span>by</span> by combining robust code, thoughtful design, <span>and</span> strategic project management.</p>
+          <p className='text-text'>Engineering solutions <span>by</span> combining robust code, thoughtful design, <span>and</span> strategic project management.</p>
           {/* <p className='focus text-text'>Software Development | UI/UX Design | Project Management</p> */}
         </div>
 

@@ -423,12 +423,6 @@
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  .experience-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .experience-card {
   @apply bg-bgPrimary;
   border-radius: 0.5rem;
@@ -463,34 +457,121 @@
   color: #e5e7eb;
 }
 /* Projects */
-.projects-content {
-  justify-content: center;
-  text-align: left;
-  gap: 0.05rem;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem;
-  height: 30vh;
+.projects {
+  text-align: center;
+  padding: 60px 20px;
+  background: #0d0d0d;
+  color: #fff;
 }
 
 .projects-title {
-  font-size: 40px;
+  font-size: 2rem;
+  @apply text-primary;
   font-weight: bold;
-  color: #94B59F;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
 }
 
 .projects-subtitle {
-  font-size: 15px;
-  margin-bottom: 1rem;
-  color: #ffffffcc;
-  font-style: italic;
+  color: #bbb;
+  margin-bottom: 40px;
 }
 
-.projects-desc {
-  font-size: 12px;
-  color: #ffffffcc;
+.projects-grid {
+  display: grid;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+@media (min-width: 768px){
+  .projects-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.project-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.tags {
+  margin-bottom: 15px;
+}
+
+.tag {
+  display: inline-block;
+  background: #2a2a2a;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-code {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-demo {
+  @apply bg-primary;
+  color: #000;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
 /* Footer */
 .footer-content {
   position: relative;
