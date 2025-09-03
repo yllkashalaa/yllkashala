@@ -26,9 +26,9 @@ function Education() {
     <div className="experience-container">
       <span className=" bg-primary"></span>
       <div className="experience-content">
-        <p className="experience-title">Education</p>
-        <p className="experience-subtitle">The Knowledge Behind the Code</p>
-        <p className='experience-desc'>An overview of my academic journey, showcasing the degrees, courses, and learning experiences that built the foundation for my skills and professional growth.</p>
+        <p className="titles">Education</p>
+        <p className="subtitles">The Knowledge Behind the Code</p>
+        <p className='description'>An overview of my academic journey, showcasing the degrees, courses, and learning experiences that built the foundation for my skills and professional growth.</p>
       </div>
 
       <div className="experience-grid">

@@ -23,12 +23,14 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="projects">
-      <h2 className="projects-title">Some Projects</h2>
-      <p className="projects-subtitle">
+    <section className="projects-container">
+      <p className="titles">Some Projects</p>
+      <p className="subtitles">Strategic Problem Solving</p>
+      <p className="description">
         A collection of projects that demonstrate my problem-solving mindset, technical expertise, and passion for building meaningful digital experiences.
       </p>
-      <div className="projects-grid">
+      <div>
+        <div className="projects-grid">
         {projects.map((p, i) => (
           <div key={i} className="project-card">
             <img src={p.image} alt={p.title} className="project-image" />
@@ -72,6 +74,7 @@ export default function Projects() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

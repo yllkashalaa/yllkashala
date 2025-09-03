@@ -29,9 +29,9 @@ function Experience() {
     <div className="experience-container">
       <span className=" bg-primary"></span>
       <div className="experience-content">
-        <p className="experience-title">Experience</p>
-        <p className="experience-subtitle">Professional Milestones and Achievements</p>
-        <p className='experience-desc'>A glimpse into my career path, highlighting the roles and experiences that honed my skills and shaped my professional growth.</p>
+        <p className="titles">Experience</p>
+        <p className="subtitles">Professional Milestones and Achievements</p>
+        <p className='description'>A glimpse into my career path, highlighting the roles and experiences that honed my skills and shaped my professional growth.</p>
       </div>
 
       <div className="experience-grid">
