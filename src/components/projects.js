@@ -3,61 +3,22 @@ import "./custom.css";
 const projects = [
   {
     title: "To-Do List",
-    desc: "Lorem ipsum",
-    tech: [],
-    demo: "#",
+    desc: "Task management app with a clean, responsive interface. Responsible for full frontend development using Next.js and JavaScript.",
+    tech: ["JavaScript", "Next.js", "TailwindCSS"],
     image: "",
   },
   {
-    title: "Elegance-Elixir",
-    desc: "",
-    tech: [],
-    demo: "#",
-    image: "#",
+    title: "Elegance Elixir",
+    desc: "UI/UX design for a Shopware store with clean, intuitive, and visually engaging interface from wireframes to high-fidelity prototype.",
+    tech: ["UX Reasearch", "UI Design", "Figma"],
+    image: "/images/elixir-elegance.png",
   },
   {
-    title: "PocketNuse",
-    desc: "Lorem ipsum",
-    tech: [],
-    demo: "#",
-    image: "/images/pigdice.png",
-  },
-  {
-    title: "To-Do List Design",
-    desc: "Lorem-ipsum",
-    tech: [],
-    image: "/images/minesweeper.png",
-  },
-  {
-    title: "Elegance-Elixir Design",
-    desc: "Lorem-ipsum",
-    tech: [],
-    image: "/images/minesweeper.png",
-  },
-  {
-    title: "PocketNurse Design",
-    desc: "Lorem-ipsum",
-    tech: [],
-    image: "/images/minesweeper.png",
-  },
-  {
-    title: "To-Do List Project Management",
-    desc: "Lorem-ipsum",
-    tech: [],
-    image: "/images/minesweeper.png",
-  },
-  {
-    title: "Elegance-Elixir Project Management",
-    desc: "Lorem-ipsum",
-    tech: [],
-    image: "/images/minesweeper.png",
-  },
-  {
-    title: "PocketNurse Project Management",
-    desc: "Lorem-ipsum",
-    tech: [],
-    image: "/images/minesweeper.png",
-  },
+    title: "Pocket Nurse",
+    desc: "Managed project and designed a user-friendly interface for a healthcare solution. Coding in progress.",
+    tech: ["Project Management", "UI Design", "Figma"],
+    image: "/images/pocket-nurse.png"
+  }
 ];
 
 export default function Projects() {
@@ -72,7 +33,7 @@ export default function Projects() {
           <div key={i} className="project-card">
             <img src={p.image} alt={p.title} className="project-image" />
             <div className="project-content">
-              <h3>{p.title}</h3>
+              <h3 className="project-content-title">{p.title}</h3>
               <p>{p.desc}</p>
               <div className="tags">
                 {p.tech.map((t, idx) => (
@@ -82,9 +43,26 @@ export default function Projects() {
                 ))}
               </div>
               <div className="buttons">
-                <a href={p.demo} className="btn btn-demo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3 mr-1.5" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-                    Demo
-                  </a>
+                <a href={p.demo} className="btn btn-demo flex items-center justify-center gap-1.5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-4 h-4"
+                    aria-hidden="true"
+                  >
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  </svg>
+                  View Project
+                </a>
                 {p.demo && (
                   <a href={p.code} className="btn btn-code">
                   Code

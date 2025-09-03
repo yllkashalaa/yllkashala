@@ -6,6 +6,8 @@ function Banner() {
       <span className="dot" style={{top: '10%', left: '20%'}}></span>
       <span className="dot" style={{top: '30%', left: '90%'}}></span>
       <span className="dot" style={{top: '40%', left: '5%'}}></span>
+      <span className="dot" style={{top: '90%', left: '10%'}}></span>
+      <span className="dot" style={{top: '20%', left: '70%'}}></span>
       <span className="dot" style={{top: '90%', left: '60%'}}></span>
       <div className='banner-content'>
 
